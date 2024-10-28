@@ -55,5 +55,19 @@ dashboard that highlights these findings.
     - Create an interactive dashboard that visualizes insights from Excel and SQL analyses.
 
     - Include an overall sales overview, top-performing products, and regional breakdowns.
+ 
+ ## Data
+
+The dataset used in this project was structured and contained fields such as 
+- Order ID,
+- Customer ID,
+- Product,
+- Region,
+- Order date,
+- Quantity,
+- and Unit price.
+During the initial analysis, there appeared to be repeated records; however, each record had a unique customer ID. After reviewing the data, I determined that these were valid entries representing unique customer transactions, so no duplicate removal was necessary.
+
+
 
 
