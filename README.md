@@ -81,7 +81,7 @@ dashboard that highlights these findings.
     - Included an overall sales overview, top-performing products, and regional breakdowns.
  
  ## Data
-
+---
 The dataset used in this project was structured and contained fields such as 
 |Order ID|Customer ID|Product|Region|Order date|Quantity|Unit price|
 |--------|-----------|-------|------|----------|--------|----------|
@@ -195,6 +195,7 @@ DATEADD( QUARTER,-1, GETDATE())
   
 
 ## Key Insights
+---
 From the analysis, the following insights were identified:
 
 Certain products consistently outperformed others across regions.
