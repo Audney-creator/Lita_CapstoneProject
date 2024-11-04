@@ -82,7 +82,14 @@ AND PRODUCT = 'SHIRT'
 ### Analyses process 
 ---
 -1. *Excel
-- Exploration: Conducted an exploratory analysis to understand the data structure and identify any patterns or anomalies.
+- Exploration: Conducted an exploratory analysis such as;
+  - Finding revenue ,
+  - Average sales per products,
+  - Total revenue by region,
+  - Grand total revenue, Total number of products,
+  - Total revenue per products,
+  - Total quantity per product sold,
+  - Total quantity of product sold, to understand the data structure and identify any patterns or anomalies.
   
 - Pivot Tables: Created pivot tables to summarize sales by product, region, and month.
   
@@ -90,7 +97,21 @@ AND PRODUCT = 'SHIRT'
   
 - Reporting: Developed additional reports for deeper insights into specific sales metrics.
 
-  
+  ![Screenshot (31)](https://github.com/user-attachments/assets/d5c4f182-5816-4591-bb8f-e63fe6343f5a)
+
+  ![Screenshot (32)](https://github.com/user-attachments/assets/5a6ec578-b994-434b-b27c-c22a649052a2)
+
+
+![Screenshot (33)](https://github.com/user-attachments/assets/68d0e73b-6439-4e1b-b87b-71a677913638)
+
+
+
+
+
+
+
+
+
 
 
 -2. *SQL
