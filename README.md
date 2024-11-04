@@ -172,6 +172,9 @@ DATEADD( QUARTER,-1, GETDATE())
    - Sales overview by category, top products, and regional performance.
     - Monthly trend analysis to observe sales fluctuations over time.
     - Interactive filters to allow users to view data by specific regions or products.
+
+     ![Screenshot (28)](https://github.com/user-attachments/assets/a7a5a167-521b-45ac-9a92-690b47d50c46)
+ 
  
   
 
