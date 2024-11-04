@@ -79,6 +79,8 @@ dashboard that highlights these findings.
 The dataset used in this project was structured and contained fields such as 
 |Order ID|Customer ID|Product|Region|Order date|Quantity|Unit price|
 |--------|-----------|-------|------|----------|--------|----------|
+
+
 During the initial analysis, there appeared to be repeated records; i had my doubts about it seeing as the customer id were unique, but confirmed that there were truly duplicates on SQL, by calling out a some particular customer id and products, the query used in confirming this;
 
 ```sql
