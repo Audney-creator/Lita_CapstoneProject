@@ -81,7 +81,7 @@ AND PRODUCT = 'SHIRT'
 ```
 ### Analyses process 
 ---
--1. *Excel
+-1. Excel
 - Exploration: Conducted an exploratory analysis such as;
   - Finding revenue ,
   - Average sales per products,
@@ -166,12 +166,14 @@ DATEADD( QUARTER,-1, GETDATE())
 
 ```
 
--3. *Power BI
+-3. Power BI
 - Dashboard Creation: Designed an interactive dashboard to display the key insights discovered through the Excel and SQL analysis.
 - Features:
    - Sales overview by category, top products, and regional performance.
     - Monthly trend analysis to observe sales fluctuations over time.
     - Interactive filters to allow users to view data by specific regions or products.
+ 
+  
 
 ## Key Insights
 From the analysis, the following insights were identified:
