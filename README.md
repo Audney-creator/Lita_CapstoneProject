@@ -90,6 +90,8 @@ AND PRODUCT = 'SHIRT'
   
 - Reporting: Developed additional reports for deeper insights into specific sales metrics.
 
+  
+
 
 -2. *SQL
 - Data Loading: Imported the dataset into SQL Server for further analysis.
