@@ -3,6 +3,19 @@ This is where i documented my Second project given to me by The Incubator Hub
 
 ## Project Title: Capstone Project 
 ## Sales Data
+
+[Project Overview](#project-overview)
+
+[Technologies Used](#technologies-used)
+
+[Project Objectives](#project-objectives)
+
+[Data](data)
+
+[Analyses process](#analyses-process)
+
+[Key Insights](#key-insights)
+
 ## Project Overview
 ---
 In this project, i was tasked with analyzing the sales performance of a retail store. 
