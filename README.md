@@ -78,8 +78,10 @@ SELECT * FROM SALESDATA
 WHERE CUSTOMER_ID = 'CUS1278'
 AND PRODUCT = 'SHIRT'
 
-## Analysis Process
-1. Excel
+```
+### Analyses process 
+---
+-1. Excel
 Exploration: Conducted an exploratory analysis to understand the data structure and identify any patterns or anomalies.
 Pivot Tables: Created pivot tables to summarize sales by product, region, and month.
 Metrics Calculation: Calculated average sales per product and total revenue by region to gauge sales performance.
