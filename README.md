@@ -71,7 +71,43 @@ The dataset used in this project was structured and contained fields such as
 - Order date,
 - Quantity,
 - and Unit price.
-During the initial analysis, there appeared to be repeated records; however, each record had a unique customer ID. After reviewing the data, I determined that these were valid entries representing unique customer transactions, so no duplicate removal was necessary.
+During the initial analysis, there appeared to be repeated records; i had my doubts about it seeing as the customer id were unique, but confirmed that there were truly duplicates on SQL, by calling out a some particular customer id and products, the query used in confirming this;
+
+---sql
+SELECT * FROM SALESDATA
+WHERE CUSTOMER_ID = 'CUS1278'
+AND PRODUCT = 'SHIRT'
+
+## Analysis Process
+1. Excel
+Exploration: Conducted an exploratory analysis to understand the data structure and identify any patterns or anomalies.
+Pivot Tables: Created pivot tables to summarize sales by product, region, and month.
+Metrics Calculation: Calculated average sales per product and total revenue by region to gauge sales performance.
+Reporting: Developed additional reports for deeper insights into specific sales metrics.
+2. SQL
+Data Loading: Imported the dataset into SQL Server for further analysis.
+Querying:
+Sample Query: Retrieve total sales for each product category
+sql
+Copy code
+SELECT product_category, SUM(sales_amount) AS total_sales
+FROM sales_data
+GROUP BY product_category;
+Ran SQL queries to answer the questions outlined in the objectives, including calculating monthly sales totals, identifying top products, and determining the regional distribution of sales.
+3. Power BI
+Dashboard Creation: Designed an interactive dashboard to display the key insights discovered through the Excel and SQL analysis.
+Features:
+Sales overview by category, top products, and regional performance.
+Monthly trend analysis to observe sales fluctuations over time.
+Interactive filters to allow users to view data by specific regions or products.
+Key Insights
+From the analysis, the following insights were identified:
+
+Certain products consistently outperformed others across regions.
+Regional sales showed variability, indicating areas for targeted marketing.
+Monthly sales trends highlighted peak sales periods, which could guide inventory planning.
+
+
 
 
 
