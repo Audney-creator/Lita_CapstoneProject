@@ -12,7 +12,12 @@ dashboard that highlights these findings.
 
 ## Technologies Used
 ---
-- Microsoft Excel: For initial data exploration and calculations
+- Microsoft Excel;
+  - data loading and inspection
+  - handling duplicates
+  - For initial data exploration and calculations
+  - data cleaning and formatting
+  - data visualizations
 
 - SQL: For querying data to derive key insights
 
@@ -32,29 +37,29 @@ dashboard that highlights these findings.
 
 - 2. SQL:
 
-    * Load the dataset into a SQL Server environment to extract the following insights:
+    * Loaded the dataset into a SQL Server environment to extract the following insights:
 
-    - Retrieve total sales for each product category.
+    - Retrieved total sales for each product category.
 
-    - Determine the number of sales transactions by region.
+    - Determined the number of sales transactions by region.
 
-    - Identify the highest-selling product by total sales value.
+    - Identified the highest-selling product by total sales value.
 
-    - Calculate total revenue per product.
+    - Calculated total revenue per product.
 
-    - Generate monthly sales totals for the current year.
+    - Generated monthly sales totals for the current year.
 
-    - Find the top 5 customers by total purchase amount.
+    - Found the top 5 customers by total purchase amount.
 
-    - Calculate the percentage of total sales contributed by each region.
+    - Calculated the percentage of total sales contributed by each region.
 
-    - Identify products with no sales in the last quarter.
+    - Identified products with no sales in the last quarter.
 
 - 3. Power BI:
 
-    - Create an interactive dashboard that visualizes insights from Excel and SQL analyses.
+    - Created an interactive dashboard that visualizes insights from Excel and SQL analysis.
 
-    - Include an overall sales overview, top-performing products, and regional breakdowns.
+    - Included an overall sales overview, top-performing products, and regional breakdowns.
  
  ## Data
 
