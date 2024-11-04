@@ -34,7 +34,7 @@ dashboard that highlights these findings.
      - Calculated metrics such as average sales per product and total revenue by region.
 
      - Generated reports using charts, to highlight trends and insight.
-
+      
 - 2. SQL:
 
     * Loaded the dataset into a SQL Server environment to extract the following insights:
@@ -81,7 +81,7 @@ AND PRODUCT = 'SHIRT'
 ```
 ### Analyses process 
 ---
--1. *Excel*
+-1. *Excel
 - Exploration: Conducted an exploratory analysis to understand the data structure and identify any patterns or anomalies.
   
 - Pivot Tables: Created pivot tables to summarize sales by product, region, and month.
@@ -89,7 +89,9 @@ AND PRODUCT = 'SHIRT'
 - Metrics Calculation: Calculated average sales per product and total revenue by region to gauge sales performance.
   
 - Reporting: Developed additional reports for deeper insights into specific sales metrics.
--2. *SQL*
+
+
+-2. *SQL
 - Data Loading: Imported the dataset into SQL Server for further analysis.
 - Querying:
   -Queries: Retrieve total sales for each product category
@@ -139,17 +141,16 @@ WHERE ORDERDATE >=
 DATEADD( QUARTER,-1, GETDATE())
 )
 
-SELECT * FROM SALESDATA
-WHERE CUSTOMER_ID = 'CUS1278'
-AND PRODUCT = 'SHIRT'
+```
 
-3. Power BI
-Dashboard Creation: Designed an interactive dashboard to display the key insights discovered through the Excel and SQL analysis.
-Features:
-Sales overview by category, top products, and regional performance.
-Monthly trend analysis to observe sales fluctuations over time.
-Interactive filters to allow users to view data by specific regions or products.
-Key Insights
+-3. *Power BI
+- Dashboard Creation: Designed an interactive dashboard to display the key insights discovered through the Excel and SQL analysis.
+- Features:
+   - Sales overview by category, top products, and regional performance.
+    - Monthly trend analysis to observe sales fluctuations over time.
+    - Interactive filters to allow users to view data by specific regions or products.
+
+## Key Insights
 From the analysis, the following insights were identified:
 
 Certain products consistently outperformed others across regions.
