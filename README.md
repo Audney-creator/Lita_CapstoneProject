@@ -81,21 +81,68 @@ AND PRODUCT = 'SHIRT'
 ```
 ### Analyses process 
 ---
--1. Excel
-Exploration: Conducted an exploratory analysis to understand the data structure and identify any patterns or anomalies.
-Pivot Tables: Created pivot tables to summarize sales by product, region, and month.
-Metrics Calculation: Calculated average sales per product and total revenue by region to gauge sales performance.
-Reporting: Developed additional reports for deeper insights into specific sales metrics.
-2. SQL
-Data Loading: Imported the dataset into SQL Server for further analysis.
-Querying:
-Sample Query: Retrieve total sales for each product category
-sql
-Copy code
-SELECT product_category, SUM(sales_amount) AS total_sales
-FROM sales_data
-GROUP BY product_category;
-Ran SQL queries to answer the questions outlined in the objectives, including calculating monthly sales totals, identifying top products, and determining the regional distribution of sales.
+-1. *Excel*
+- Exploration: Conducted an exploratory analysis to understand the data structure and identify any patterns or anomalies.
+  
+- Pivot Tables: Created pivot tables to summarize sales by product, region, and month.
+  
+- Metrics Calculation: Calculated average sales per product and total revenue by region to gauge sales performance.
+  
+- Reporting: Developed additional reports for deeper insights into specific sales metrics.
+-2. *SQL*
+- Data Loading: Imported the dataset into SQL Server for further analysis.
+- Querying:
+  -Queries: Retrieve total sales for each product category
+```sql
+CREATE database SALES_REPORT
+
+SELECT *FROM[dbo].[salesdata]
+
+------TOTALSALES FOR EACH PRODUCT CATEGORY------
+SELECT Product,SUM(Revenue) AS TOTALSALES FROM SALESDATA
+GROUP BY Product 
+
+-----NUMBER OF SALES TRANSACTION IN EACH REGION---
+SELECT REGION,COUNT(QUANTITY) AS NUMBER_OF_TRANSACTIONS FROM SALESDATA
+GROUP BY REGION
+
+-----HIGHEST SELLING PRODUCTS BY TOTALSALES VALUE
+SELECT TOP 1 PRODUCT,SUM(REVENUE) AS TOTALSALES FROM SALESDATA
+GROUP BY PRODUCT
+
+-----TOTAL REVENUE PER PRODUCT
+SELECT PRODUCT,SUM(REVENUE) AS TOTALREVENUE FROM SALESDATA
+GROUP BY PRODUCT
+
+-----MONTHLY SALESTOTAL FOR THE CURRENT YEAR
+SELECT FORMAT(ORDERDATE, '2024-MM') AS MONTH,SUM(REVENUE) AS MONTHLYSALESTOTAL FROM SALESDATA
+WHERE YEAR(ORDERDATE) = 2023
+GROUP BY FORMAT(ORDERDATE, '2024-MM')
+ORDER BY MONTH 
+
+----TOP 5 CUSTOMERS BY TOTAL PURCHASE AMOUNT-----
+SELECT TOP 5 CUSTOMER_ID,SUM(REVENUE) AS TOTALPURCHASEAMOUNT FROM SALESDATA
+GROUP BY CUSTOMER_ID
+ORDER BY TOTALPURCHASEAMOUNT DESC
+
+-----PERCENTAGE OF THE TOTALSALES BY EACH REGION----
+SELECT REGION,
+SUM(REVENUE) AS REGIONALSALES,
+(SUM(REVENUE) * 100.0) / (SELECT SUM(REVENUE) FROM SALESDATA) AS PERCENTAGEOFTOTALSALES FROM SALESDATA
+GROUP BY REGION
+
+----PRODUCTS WITH NO SALES IN THE LAST QUARTER---
+SELECT PRODUCT FROM SALESDATA
+WHERE PRODUCT NOT IN (
+SELECT PRODUCT FROM SALESDATA 
+WHERE ORDERDATE >=
+DATEADD( QUARTER,-1, GETDATE())
+)
+
+SELECT * FROM SALESDATA
+WHERE CUSTOMER_ID = 'CUS1278'
+AND PRODUCT = 'SHIRT'
+
 3. Power BI
 Dashboard Creation: Designed an interactive dashboard to display the key insights discovered through the Excel and SQL analysis.
 Features:
