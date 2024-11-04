@@ -14,11 +14,11 @@ This is where i documented my Second project given to me by The Incubator Hub
 
 [Analysis process](#analysis-process)
 
-- Excel
+- [Excel](#excel)
 
-- SQL
+- [SQL](#sql)
 
-- Power BI
+- [Power BI](#power-bi)
 
 [Key Insights](#key-insights)
 
@@ -97,7 +97,8 @@ AND PRODUCT = 'SHIRT'
 ```
 ## Analysis process 
 ---
-# -1. Excel
+**-1. Excel**
+---
 - Exploration: Conducted an exploratory analysis such as;
   - Finding revenue ,
   - Average sales per products,
@@ -130,7 +131,8 @@ AND PRODUCT = 'SHIRT'
 
 
 
-# -2. SQL
+**-2. SQL**
+---
 - Data Loading: Imported the dataset into SQL Server for further analysis.
 - Querying:
   -Queries: Retrieve total sales for each product category
@@ -182,7 +184,8 @@ DATEADD( QUARTER,-1, GETDATE())
 
 ```
 
-# -3. Power BI
+**-3. Power BI**
+---
 - Dashboard Creation: Designed an interactive dashboard to display the key insights discovered through the Excel and SQL analysis.
 - Features:
    - Sales overview by category, top products, and regional performance.
