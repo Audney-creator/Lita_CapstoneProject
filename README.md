@@ -14,11 +14,11 @@ This is where i documented my Second project given to me by The Incubator Hub
 
 [Analysis process](#analysis-process)
 
-- [Excel](#excel)
+ [Excel](#excel)
 
-- [SQL](#sql)
+ [SQL](#sql)
 
-- [Power BI](#power-bi)
+ [Power BI](#power-bi)
 
 [Key Insights](#key-insights)
 
